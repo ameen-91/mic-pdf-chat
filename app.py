@@ -1,6 +1,7 @@
 import streamlit as st
 from PyPDF2 import PdfReader
 
+
 def read_pdf(docs):
     text = ""
     for pdf in docs:
@@ -10,17 +11,10 @@ def read_pdf(docs):
     return text
 
 
-
 def main():
     st.set_page_config(page_title="MIC PDF Chat", page_icon=":books:")
     st.header("PDF Chat")
 
 
-
-
-
-
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
